@@ -84,18 +84,18 @@ body {
     backface-visibility: hidden;
     transition: transform 1s ease-in-out, box-shadow 1s ease-in-out;
     padding: 20px;
+    background-color: white; /* Fondo blanco sólido */
+    border-radius: 10px; /* Bordes redondeados para mejor apariencia */
+    box-shadow: 0 20px 40px -10px rgba(255, 20, 147, 0.5); /* Sombra */
 }
 
 .front_card {
-    background-color: whitesmoke;
     text-align: center;
-    box-shadow: 0 20px 40px -10px rgba(255, 20, 147, 0.5);
     transform-origin: left;
-    z-index: 2;
+    z-index: 2; /* Asegura que esté por encima de otros elementos */
 }
 
 .inside_card {
-    background-color: whitesmoke;
     text-align: center;
     transform: rotateY(180deg);
     z-index: 1;
@@ -172,6 +172,7 @@ body {
     height: 100%;
     pointer-events: none;
     overflow: hidden;
+    z-index: 0; /* Asegura que esté detrás de la tarjeta */
 }
 
 .heart_rain span {
