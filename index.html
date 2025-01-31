@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentines Day 2025</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="data:,">
+</head>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const heartContainer = document.querySelector(".heart_rain");
+
+        for (let i = 0; i < 20; i++) {
+            let heart = document.createElement("span");
+            heart.innerHTML = ["❤️", "💖", "💞", "💘"][Math.floor(Math.random() * 4)];
+            heart.style.position = "absolute";
+            heart.style.left = Math.random() * 100 + "vw";
+            heart.style.animation = `fall ${Math.random() * 5 + 3}s linear infinite`;
+            heartContainer.appendChild(heart);
+        }
+    });
+
+    // Definimos la animación directamente en JavaScript
+    const style = document.createElement("style");
+    style.innerHTML = `
+        @keyframes fall {
+            0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+        }
+        .heart_rain span {
+            position: absolute;
+            bottom: 100%;
+            font-size: 1.5rem;
+            animation: fall linear infinite;
+            color: red;
+        }
+    `;
+    document.head.appendChild(style);
+</script>
+<body>
+    <div class="valentines_card">
+        <div class="front_card">
+            <img src="flores_transparentes.png" alt="Flores transparentes" class="front_img">
+            <div class="front_text">
+                <h3>Para la mujer de mi vida, la dueña de mi corazón...</h3>
+            </div>    
+        </div>
+        <div class="heart_rain">
+            <!-- Generamos más corazones para la lluvia -->
+            <span>❤️</span><span>💖</span><span>💞</span><span>💗</span><span>💘</span>
+            <span>❤️</span><span>💖</span><span>💞</span><span>💗</span><span>💘</span>
+            <span>❤️</span><span>💖</span><span>💞</span><span>💗</span><span>💘</span>
+        </div>
+        <div class="inside_card">
+            <!-- Corazones agregados aquí 👇 -->
+            <span class="heart heart-top-left">💖</span>
+            <span class="heart heart-top-right">❤️</span>
+            <span class="heart heart-middle-left">💖</span>
+            <span class="heart heart-middle-right">❤️</span>
+            <span class="heart heart-bottom-left">💖</span>
+            <span class="heart heart-bottom-right">❤️</span>
+            <span class="heart heart-center">💞</span>
+            
+            <img src="michifus.png" alt="Michifus" class="inside_img">
+            <div class="inside_text">
+                <h4>Mai, amada mía, lindura de mi corazón, amorcito, mi vida, mi todo...</h4>
+                <h3>¿Te gustaría ser mi San Valentín?</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
