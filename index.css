@@ -1,29 +1,21 @@
 /* Estilos generales */
-body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    background: #ffc0cb;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Brush Script MT', cursive;
-    overflow: hidden;
+body.ai-style-change-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 430px;
+  height: 932px;
+  margin: 0px;
+  padding: 0px;
+  overflow: visible;
 }
 
-/* Contenedor de la tarjeta */
-.valentines_card {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-    transform-style: preserve-3d;
-    perspective: 2500px;
-    width: 85%;
-    max-width: 450px;
-    aspect-ratio: 3 / 4;
-    padding: 20px;
+.valentines_card.ai-style-change-2 {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  transform: none;
+  margin: 232.672px 35px;
 }
 
 /* Imagen frontal e interior */
