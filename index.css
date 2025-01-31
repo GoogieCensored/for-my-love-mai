@@ -68,10 +68,19 @@ body {
 }
 
 .inside_text {
-    color: #A60657;
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 70px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.inside_text h4 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.inside_text h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 /* Tarjeta frontal */
