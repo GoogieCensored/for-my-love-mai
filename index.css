@@ -10,12 +10,10 @@ body {
     font-family: 'Brush Script MT', cursive;
     overflow: hidden;
 }
+
 /* Contenedor de la tarjeta */
 .valentines_card {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative; /* Cambiado de absolute a relative */
     cursor: pointer;
     transform-style: preserve-3d;
     perspective: 2500px;
@@ -23,6 +21,7 @@ body {
     max-width: 450px;
     aspect-ratio: 3 / 4;
     padding: 20px;
+    box-sizing: border-box; /* Asegúrate de que el padding se incluya en el ancho y alto */
 }
 /* Imagen frontal e interior */
 .front_img, .inside_img {
@@ -182,29 +181,36 @@ body {
         width: 80%;
         max-width: 380px;
     }
+
     .front_text,
     .inside_text {
         font-size: 1.2rem;
     }
+
     .inside_img {
         width: 60%;
     }
+
     .heart {
         font-size: 1.5rem;
     }
 }
+
 @media (max-width: 480px) {
     .valentines_card {
         width: 90%;
         max-width: 320px;
     }
+
     .front_text,
     .inside_text {
         font-size: 1rem;
     }
+
     .inside_img {
         width: 70%;
     }
+
     .heart {
         font-size: 1.2rem;
     }
