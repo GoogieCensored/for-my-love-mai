@@ -16,8 +16,8 @@ body.ai-style-change-1 {
   left: 50%;
   transform: translateX(-50%);
   margin: 0;
-  max-width: 90%;
   width: 100%;
+  max-width: 450px; /* Ajuste el tamaño máximo */
 }
 
 /* Imagen frontal e interior */
