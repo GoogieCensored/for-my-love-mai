@@ -159,15 +159,14 @@ body {
     50% { transform: translateY(-20px) rotate(var(--rotate)); }
 }
 
-/* Lluvia de corazones */
 .heart_rain {
-    position: fixed;
-    left: -200px;
-    top: -170px;
-    width: 1500px;
-    height: 980px;
-    pointer-events: none;
-    overflow: hidden;
+  position: relative;
+  top: auto;
+  left: auto;
+  right: auto;
+  bottom: auto;
+  transform: none;
+  margin: 0px;
 }
 
 .heart_rain span {
