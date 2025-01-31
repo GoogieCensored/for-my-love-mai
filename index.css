@@ -24,6 +24,7 @@ body {
     max-width: 450px;
     aspect-ratio: 3 / 4;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 /* Imagen frontal e interior */
@@ -112,6 +113,10 @@ body {
 }
 
 /* Posiciones de los corazones */
+.heart-top-left, .heart-top-right, .heart-middle-left, .heart-middle-right, .heart-bottom-left, .heart-bottom-right, .heart-center {
+    left: 50%;
+    transform: translateX(-50%) rotate(var(--rotate));
+}
 .heart-top-left {
     top: 5%;
     left: 5%;
