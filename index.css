@@ -3,24 +3,26 @@ body.ai-style-change-1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 430px;
-  height: 932px;
-  margin: 0px;
-  padding: 0px;
-  overflow: visible;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 .valentines_card.ai-style-change-2 {
   position: relative;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   transform: none;
-  margin: 232.672px 35px;
+  margin: 0;
+  max-width: 90%;
+  width: 100%;
 }
 
 /* Imagen frontal e interior */
 .front_img, .inside_img {
-    width: 90%;
+    width: 100%;
     display: block;
     margin: 20px auto;
 }
