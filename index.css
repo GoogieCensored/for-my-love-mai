@@ -13,8 +13,8 @@ body.ai-style-change-1 {
 .valentines_card.ai-style-change-2 {
   position: relative;
   top: 0;
-  left: 0;
-  transform: none;
+  left: 50%;
+  transform: translateX(-50%);
   margin: 0;
   max-width: 90%;
   width: 100%;
